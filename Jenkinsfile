@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    triggers {
-        bitbucketPush()
-    }
+    
     environment {
         DOCKERHUB_CREDENTIALS = credentials ('dockerhub-id')
     }
